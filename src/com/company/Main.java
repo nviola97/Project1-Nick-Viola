@@ -28,6 +28,11 @@ public class Main {
          while (!productName.equals("DONE")){
             System.out.println("Enter product name if done type DONE: ");
             productName = reader.nextLine();
+            for(int i = 0; i< product.size(); i++){
+                if (productName.equals(product)){
+
+                }
+            }
 
         }
         }
