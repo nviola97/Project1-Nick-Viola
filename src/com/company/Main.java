@@ -34,7 +34,7 @@ public class Main {
                     System.out.println("Item not found.");
                     break;
                 }
-                if (productName == "DONE");
+                if (productName.equals("DONE"));
                     break;
             }
         }
