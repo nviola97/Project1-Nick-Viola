@@ -22,21 +22,21 @@ public class Main {
         }
         var productName = "";
         var reader = new Scanner(System.in);
+        System.out.println("Enter product name if done type DONE: ");
+        productName = reader.nextLine();
         while (!productName.equals("DONE")) {
-            System.out.println("Enter product name if done type DONE: ");
-            productName = reader.nextLine();
             for (int i = 0; i < product.size(); i++) {
                 if (productName.equals(product.get(i))) {
                     System.out.println(product.get(i) + " " + "$" + price.get(i) + " " + numAvailable.get(i) + " in stock");
                     break;
                 }
-                if (i == product.size()-1){
+                if (i == product.size() - 1) {
                     System.out.println("Item not found.");
                     break;
                 }
-                if (productName.equals("DONE"));
-                    break;
             }
+            System.out.println("Enter product name if done type DONE: ");
+            productName = reader.nextLine();
         }
     }
 }
